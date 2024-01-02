@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arama Çalışması</title>
+    <style type="text/css">
+        h1,label,input,button {
+
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>ARIYOOOO</h1></center>
+    <form action="https://www.google.com/search" method="GET">
+        <center><input type="text" id="search" name="q" required>
+        <input type="submit" value="Ara">
+        <button id="luckyButton">Şansımı kullan</button></center>
+
+    </form>
+    
+
+    <script>
+        document.getElementById('luckyButton').addEventListener('click', function() {
+            // Rastgele bir sayfa için Google'a yönlendir
+            window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent('I\'m feeling lucky');
+        });
+    </script>
+
+</body>
+</html>
+
